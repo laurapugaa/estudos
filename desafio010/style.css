@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:"IDroid";
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(33, 203, 135, 0.767);
+    margin: auto;
+    padding: 0;
+    
+}
+
+
+h1{
+    font-family: 'IDroid', 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: normal;
+    color: rgba(15, 72, 15, 0.776);
+}
+
+
+h2{
+    font-family: 'IDroid', 'Times New Roman', Times, serif;
+    color: rgba(15, 72, 15, 0.776);
+}
+
+
+#titulocabeca {
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+
+
+nav > h3 {
+    color: white;
+    font-size: small;
+    text-align: center;
+}
+
+
+nav {
+    background-image: linear-gradient(to bottom, white, rgba(14, 59, 0, 0.612));
+    padding: 10px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.434);
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+
+.menu li a:hover {
+    background-color: #6dbd508c;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+    padding: 2px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.329);
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+
+main{
+    background-color: white;
+    padding: 5px;
+    margin: 2px auto 15px auto;
+    max-width: 800px;
+    width: 90%;
+    text-align: justify;  
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.128);;
+}
+
+
+#link > a {
+    display: contents;
+}
+
+
+div {
+    background-color: rgba(0, 128, 0, 0.26);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.128);
+    margin: auto;
+    text-align: justify;
+}
+
+div > h1 {
+    background-color: rgba(18, 133, 10, 0.53);
+    padding: 5px;
+    margin: -5px -5px 0px -5px;
+    font-size:medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+section {
+    padding: 5px;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.check-icon {
+    color: green;
+    margin-right: 10px;
+}
+
+
+#list-right,
+#list-left {
+    padding-left: 10px;
+    list-style: none;
+    display: inline-block;
+    width: 45%;
+}
+
+
+#list-left {
+    padding-right: 0;
+}
+
+
+footer {
+    background-color: rgba(8, 79, 8, 0.84);
+    padding: 1px;
+    text-align: center;
+
+}
+
+picture {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+/* Media Queries para Responsividade */
+
+/* Para telas pequenas */
+@media (max-width: 600px) {
+    nav {
+        padding: 10px;
+    }
+    nav > a {
+        margin-right: 10px;
+        font-size: smaller;
+    }
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+    div > h1 {
+        font-size: small;
+    }
+    footer {
+        font-size: small;
+        padding: 5px;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+}
+
+
+/* Para telas médias */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px;
+    }
+    main {
+        width: 95%;
+    }
+    div > h1 {
+        font-size: medium;
+    }
+}
